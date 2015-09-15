@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>The Best Dating Website</title>
+</head>
+<body>
+  <h2>Please Enter Your Details For Our Dating Website!</h2>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+<fieldset>
+    <legend>Your Face</legend>
+    <label for="avatar">Your Image:</label>
+    <input type="file" id="avatar" name="avatar" required></br>
+    <label for="preview">Image Preview: </label>
+    <img src="" alt="" name="preview" id="preview">
+</fieldset>
+
+<fieldset>
+    <legend>Your General Details</legend>
+    <label for="Name">Name:</label>
+    <input name="Name" id="Name" type="text" required></br>
+    <label for="gender">Gender:</label>
+    <input name="gender" id="male" type="radio" value="male" required/>Male<input type="radio" name="gender" value="female" id="female" required/>Female</br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required></br>
+    <label for="birth">Date of birth:</label>
+    <input name="birth" id="birth" type="date"></br>
+    <label for="colour">Favorite Colour:</label>
+    <input name="colour" id="colour" type="color"></br>
+    <label for="country">Which Country: </label>    
+    <select name="country" id="country">
+        <option value="">Select a Country</option>
+        <option value="Chile">Chile</option>
+        <option value="Australia">Australia</option>
+        <option value="España">España</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Portugal">Portugal</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <legend>Your indicators</legend>
+    <label for="height">Height:</label>
+    Short <input name="height" id="height" type="range" min="0" max="100"> Tall </br>
+    <label for="salary"></label>
+    Salary: Poor  <input name="salary" id="salary" type="range" min="0" max="100"> Rich
+</fieldset>
+    
+<fieldset>
+    <legend>Your Contact Information</legend>
+    <label for="email">Email: </label>
+    <input name="email" id="email" type="email" required></br>
+    <label for="mobile">Mobile: </label>
+    <input name="mobile" id="mobile" type="tel"></br>
+    <label for="address">Address: </label>
+    <textarea name="address" id="address"></textarea></br>
+    <label for="options">Method to contact you</label>
+    Email <input name="options[]" type="checkbox" value="Email">
+    Whatsapp <input name="options[]" type="checkbox" value="Whatsapp">
+    In-app Chat <input name="options[]" type="checkbox" value="Chat">
+</fieldset>
+ 
+<input type="submit" id="send" name="send" value="Submit">
+    
+</form>
+</body>
+</html>
